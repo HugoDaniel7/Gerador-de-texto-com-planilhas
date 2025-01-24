@@ -1,0 +1,153 @@
+/* Estilos para o corpo do projeto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    font-family: "roboto mono", sans-serif;
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Permite rolar verticalmente */
+    background-color: #f4f4f4; /* Para garantir que a página tenha fundo */
+}
+
+/* Restante do CSS, sem mudanças */
+
+/* Estilos para o header */
+header {
+    background: #333;
+    color: #fff;
+    display: flex;  
+}
+
+nav {
+    display: flex;
+    background-color: #333;
+    color: #fff;     
+    margin: 1%;  
+}
+
+nav img {
+    width: 20%;       
+    margin: 5%;
+    border-radius: 20%;
+}
+
+h1 {     
+    font-size: 18px; 
+    margin-top: 12%;
+    color: #ffffff;         
+}
+
+h3 {
+    font-size: 17px; 
+    margin-top: 5%;  
+    color: #ffffff;     
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    text-align: justify;
+}
+
+/* Estilos para o footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; 
+    width: 100%; 
+    position: relative; 
+    bottom: 0;
+}
+
+footer p {
+    margin: 2%; 
+    padding: 0; 
+}
+
+#clique-footer:hover {
+    cursor: pointer;
+}
+
+/* ===== Responsividade com Media Queries ===== */
+
+/* Telas menores (Tablets, 768px) */
+@media (max-width: 768px) {
+    footer {  
+        font-size: 50%;
+    }
+}
+
+/* Telas muito pequenas (Smartphones, 480px) */
+@media (max-width: 480px) {
+    footer {  
+        font-size: 50%;
+    }
+}
+
+/* Telas muito grandes (Monitores grandes, 1200px+) */
+@media (min-width: 1200px) {
+    /* Nenhuma modificação necessária */
+}
+
+
+
+
+
+/* Animação de carregamento (spinner) */
+.loading {
+    border: 4px solid transparent;
+    border-top: 4px solid #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-right: 10px; /* Espaço entre o ícone e o texto do botão */
+  }
+  
+  /* Animação de rotação */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
