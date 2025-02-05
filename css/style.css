@@ -1,8 +1,6 @@
-/* Estilos para o corpo do projeto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
 body {
-    font-family: "roboto mono", sans-serif;
+    font-family: Calibri, sans-serif;
+    font-size: 11px;    
     margin: 0;
     height: 100vh; 
     display: flex;
@@ -11,7 +9,6 @@ body {
     background-color: #f4f4f4; /* Para garantir que a página tenha fundo */
 }
 
-/* Restante do CSS, sem mudanças */
 
 /* Estilos para o header */
 header {
@@ -38,8 +35,6 @@ h1 {
     margin-top: 12%;
     color: #ffffff;         
 }
-
-
 
 .container {
     text-align: center;
@@ -85,8 +80,8 @@ button:hover {
 }
 
 footer {
-    background-color: #222; /* Cor escura elegante */
-    color: #fff; /* Texto branco */
+    background-color: #222; 
+    color: #fff; 
     text-align: center;
     padding: 15px 0;
     position: relative;
@@ -109,37 +104,62 @@ footer {
 }
 
 #clique-footer span {
-    color: #fff; /* Destaque no nome */
+    color: #fff; 
 }
 
 #clique-footer:hover {
     color: #fff;
 }
 
-
-
-
 #texto-inicio {
     font-size: 17px; 
     margin-top: 5%;  
     color: #ffffff;  
-    margin: 0 auto; /* Centraliza o texto horizontalmente */
+    margin: 0 auto; 
     overflow: hidden;
     border-right: 2px solid whitesmoke;
     white-space: nowrap;
-    width: 100%; /* Ajusta a largura para 100% em telas menores */
-    max-width: 800px; /* Define um limite máximo para evitar cortes */
-    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite; /* Aplica as animações */
+    width: 100%; 
+    max-width: 800px; 
+    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite; 
 }
 
+.highlight {
+    background-color: yellow;
+}
 
+.no-spacing {
+    margin: 0;
+    padding: 0;
+}
 
+.copied-text {
+    font-family: Calibri, sans-serif;
+    font-size: 11px;
+}
+
+#destaque {
+    font-size: 14.66px; 
+}
+
+/* Animação de carregamento (spinner) */
+.loading {
+    border: 4px solid transparent;
+    border-top: 4px solid #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-right: 10px; 
+  }
+  
 @keyframes typing {
     from {
         width: 0;
     }
     to {
-        width: 100%; /* Ajusta a animação para respeitar a nova largura */
+        width: 100%; 
     }
 }
 
@@ -171,31 +191,12 @@ footer {
         font-size: 50%;
     }}
 
-
-
-
-
-/* Animação de carregamento (spinner) */
-.loading {
-    border: 4px solid transparent;
-    border-top: 4px solid #fff;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    animation: spin 1s linear infinite;
-    display: inline-block;
-    margin-right: 10px; /* Espaço entre o ícone e o texto do botão */
-  }
-  
   /* Animação de rotação */
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
   
-
-
-
   /* ===== Responsividade com Media Queries ===== */
 
 /* Telas pequenas (Smartphones, até 480px) */
